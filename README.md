@@ -9,6 +9,10 @@ Notes :
 - Resources seemed scarce and dispersed, and deprecated
 - Some instructions were unclear regarding the tooling, the tooling seem possible in 3 ways : deps.dn, "in leiningen", in maven
 
+Leiningen is the Swiss Army Knife of Clojure development. It handles:
+Project compilation. Deployment of library code. package/dependency management.
+It's a lesser cargo for Clojure
+
 If a port is specified to the docker image, it will output
 the following error message :" WARNING: Implicit use of clojure.main with options is deprecated, use -M
 Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
@@ -35,7 +39,7 @@ sudo ./linux-install.sh --prefix /opt/infrastructure/clojure
 lein new helloworld
 ```
 
-- or try via Docker
+## or try via Docker
 ```shell
 docker build -t clojure:hello .
 docker run clojure:hello
