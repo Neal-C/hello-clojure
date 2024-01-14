@@ -23,6 +23,26 @@ Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileIn
 Your system needs to have these installed : Java, bash, curl, rlwrap
 
 ### Commands
+
+#### try via Docker
+
+clone
+
+
+```shell
+git clone git@github.com:Neal-C/hello-clojure.git
+```
+
+build & run
+
+
+```shell
+docker build -t clojure:hello .
+docker run clojure:hello
+```
+
+or local install 
+
 ```shell
 curl -L -O https://github.com/clojure/brew-install/releases/latest/download/linux-install.sh
 chmod +x linux-install.sh
@@ -39,8 +59,3 @@ sudo ./linux-install.sh --prefix /opt/infrastructure/clojure
 lein new helloworld
 ```
 
-## or try via Docker
-```shell
-docker build -t clojure:hello .
-docker run clojure:hello
-```
